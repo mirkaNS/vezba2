@@ -1,0 +1,199 @@
+.interview {
+	background-color: $color-whisper;
+	position: relative;
+}
+
+.review {
+	display: inline-block;
+}
+
+.profile {
+	max-width: 50%;
+	float: left;
+	margin-bottom: 17px;
+
+	@include max-width($tablet) {
+		max-width: 100%;
+		display: block;
+	}
+}
+
+.profile-left {
+	@include max-width($tablet) {
+		margin-bottom: 27px;
+	}
+
+	@include max-width($mobile) {
+		margin-bottom: 21px;
+	}
+
+	.profile-image {
+		margin-left: -135px;
+
+		@include max-width($tablet) {
+			margin-left: -22px;
+		}
+	}
+}
+
+.profile-right {
+	@include max-width($mobile) {
+		margin-bottom: 49px;
+	}
+
+	.profile-image {
+		margin-right: -135px;
+
+		@include max-width($tablet) {
+			margin-left: -22px;
+		}
+	}
+}
+
+.profile-image {
+
+	display: inline-block;
+	position: relative;
+	width: 123%;
+	height: 443px;
+
+	@include max-width($tablet) {
+
+		width: calc(100% + 45px);
+		height: 448px;
+		overflow: hidden;
+	}
+
+	@include max-width($mobile) {
+		width: calc(100% + 42px);
+		height: 452px;
+	}
+}
+
+.profil-text-left {
+	margin-top: 29px;
+	margin-left: 2px;
+
+	@include max-width($tablet) {
+		margin-top: 22px;
+		margin-left: 3px;
+	}
+}
+
+.profil-text-right {
+	margin-top: 29px;
+	margin-left: 14px;
+
+	@include max-width($tablet) {
+		margin-top: 27px;
+		margin-left: 3px;
+	}
+
+	.headline {
+		@include max-width($mobile) {
+			margin-bottom: 14px;
+		}
+	}
+
+	.description {
+		@include max-width($mobile) {
+			line-height: 1.22;
+			max-width: none;
+		}
+	}
+}
+
+.profession {
+	display: block;
+	font-size: 18px;
+	font-family: 'John-Regular';
+	color: $color-grey;
+	margin-bottom: 6px;
+
+	@include max-width($mobile) {
+		margin-bottom: 17px;
+	}
+}
+
+.headline {
+	font-size: 36px;
+	font-family: 'Cordale';
+	color: $color-aqua;
+	font-weight: 100;
+	margin-bottom: 17px;
+
+	@include max-width($tablet) {
+		margin-bottom: 14px;
+	}
+
+	@include max-width($mobile) {
+		font-size: 24px;
+		margin-bottom: 11px;
+	}
+}
+
+.purple {
+	color: $color-purple;
+
+	@include max-width($tablet) {
+		margin-bottom: 9px;
+	}
+}
+
+.description {
+	font-size: 16px;
+	font-family: 'John-Regular';
+	color: $color-grey;
+	line-height: 1.6;
+
+	@include max-width($mobile) {
+		font-size: 14px;
+		line-height: 1.5;
+		max-width: 92%;
+	}
+}
+
+.interview-link {
+	padding-top: 15px;
+	border-top: 1px solid $color-line;
+	margin-right: 0;
+	float: none;
+
+	.text-regular {
+		@include max-width($mobile) {
+			margin-left: 23px;
+		}
+	}
+
+	@include max-width($tablet) {
+		padding-top: 18px;
+	}
+
+	@include max-width($mobile) {
+		padding-top: 12px;
+	}
+}
+
+.block {
+	display: inline-block;
+
+	@include max-width($tablet) {
+		display: block;
+		margin-right: 0;
+	}
+}
+
+.block-first {
+	margin-right: 24%;
+	@include max-width($tablet) {
+		margin-bottom: 9px;
+	}
+}
+
+.interview-down {
+	padding-top: 34px;
+
+	@include max-width($tablet) {
+		padding-top: 30px;
+	}
+}

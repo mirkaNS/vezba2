@@ -1,0 +1,322 @@
+.graph-content {
+	margin-top: 94px;
+
+	@include max-width($mobile) {
+		margin-top: 45px;
+	}
+}
+
+.graph-note {
+	color: $color-grey;
+	font-size: 18px;
+	font-family: 'John-Regular';
+	letter-spacing: -0.2px;
+
+	@include max-width($tablet) {
+		margin-bottom: 7px;
+	}
+
+	@include max-width($mobile) {
+		margin-bottom: 14px;
+		letter-spacing: -0.5px;
+	}
+}
+
+.graph-title {
+	font-family: 'Cordale';
+	color: $color-orange;
+	font-size: 36px;
+
+	@include max-width($tablet) {
+		font-size: 30px;
+		font-weight: 100;
+	}
+
+	@include max-width($mobile) {
+		font-size: 23px;
+		letter-spacing: 0.4px;
+	}
+}
+
+.graph {
+	display: grid;
+	grid-template-columns: 31% 31% 31%;
+	grid-column-gap: 30px;
+
+	@include max-width($tablet) {
+		// grid-template-columns: 50% 50%;
+		grid-column-gap: unset;
+		grid-template-columns: repeat(4,[col] 25%);
+		grid-template-rows: repeat(2,[row] auto);
+		margin-bottom: 44px;
+	}
+
+	@include max-width($mobile) {
+		display: block;
+		margin-bottom: 15px;
+	}
+}
+
+.highlights {
+	margin-top: 38px;
+	margin-left: 2px;
+
+	@include max-width($tablet) {
+		grid-column: col / span 2;
+		grid-row: row;
+	}
+
+	@include max-width($mobile) {
+		margin-top: 31px;
+		margin-left: 0;
+	}
+}
+
+.highlights-second {
+	margin-left: 9px;
+
+	@include max-width($tablet) {
+		grid-column: col 3 / span 2;
+		grid-row: row;
+	}
+
+	@include max-width($mobile) {
+		margin-left: 0;
+	}
+
+	.percentages {
+		@include max-width($mobile) {
+			padding-top: 17px;
+		}
+	}
+}
+
+.highlights-title {
+	color: $color-orange;
+	font-size: 24px;
+	font-family: 'John-Regular';
+	padding-bottom: 14px;
+
+	@include max-width($mobile) {
+		font-size: 18px;
+		padding-bottom: 10px;
+	}
+}
+
+.statistics {
+	height: 130px;
+
+	.item-stat {
+		color: $color-grey;
+		font-size: 14px;
+		font-family: 'John-Bold';
+		margin-bottom: 28px;
+	}
+
+	.item-margin {
+		@include max-width($mobile) {
+			margin-bottom: 11px;
+		}
+	}
+
+	.special-item {
+		margin-bottom: 11px;
+
+		@include max-width($tablet) {
+			width: 162px;
+		}
+	}
+
+	.item-diferent {
+
+		@include max-width($mobile) {
+			margin-bottom: -5px;
+			width: 161px;
+		}
+	}
+
+	.numbers {
+		color: $color-orange;
+		font-size: 48px;
+		font-family: 'John-Regular';
+		letter-spacing: -2px;
+	}
+
+	.number {
+		margin-left: 23px;
+		
+		@include max-width($tablet) {
+			margin-left: 10px;
+		}
+	}
+}
+
+.percentages {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	height: 130px;
+	padding-top: 20px;
+	border-top: 1px solid $color-line;
+}
+
+.statistics-right {
+	margin-left: 19px;
+
+	@include max-width($tablet) {
+		margin-left: 5px;
+	}
+
+	@include max-width($mobile) {
+		margin-left: 10px;
+	}
+}
+
+.statistics-right2 {
+	margin-left: 22px;
+
+	@include max-width($tablet) {
+		margin-left: 6px;
+	}
+}
+
+.special {
+	height: 130px;
+	padding-top: 20px;
+	border-top: 1px solid $color-line;
+
+	@include max-width($mobile) {
+		padding-top: 18px;
+	}
+
+
+	.item-stat {
+		color: $color-grey;
+		font-size: 14px;
+		font-family: 'John-Bold';
+		margin-bottom: 27px;
+
+	}
+
+	.numbers {
+		color: $color-orange;
+		font-size: 48px;
+		font-family: 'John-Regular';
+		letter-spacing: -3px;
+	}
+}
+
+.graph-profit {
+	margin-top: 47px;
+	margin-left: 5px;
+
+	@include max-width($tablet) {
+		margin-top: 34px;
+		margin-left: -6px;
+		grid-column: col;
+		grid-row: row 2;
+	}
+
+	@include max-width($mobile) {
+		margin-top: 21px;
+		margin-left: -9px;
+	}
+
+	.item-stat {
+		color: $color-grey;
+		font-size: 14px;
+		font-family: 'John-Bold';
+		margin-left: 6px;
+		margin-bottom: 12px;
+		
+		@include max-width($tablet) {
+			display: none;
+		}
+
+		@include max-width($mobile) {
+			display: block;
+			margin-left: 8px;
+			margin-bottom: 13px;
+		}
+	}
+
+	.img-graph {
+		@include max-width($tablet) {
+			max-width: 249px;
+		}
+
+		@include max-width($mobile) {
+			max-width: 257px;
+		}
+	}
+}
+
+.graph-text {
+	grid-column: 1 / span 3;
+	margin-top: 57px;
+
+	@include max-width($tablet) {
+		grid-column: col 2/span 3;
+		grid-row: row 2;
+		margin-left: 128px;
+		margin-top: 36px;
+	}
+
+	@include max-width($mobile) {
+		margin-top: 28px;
+		margin-left: 0;
+	}
+
+	.graph-text-info {
+		font-family: 'John-Regular';
+		color: $color-grey;
+		font-size: 14px;
+		letter-spacing: 0.3px;
+		padding-bottom: 66px;
+		border-bottom: 1px solid $color-line;
+
+		@include max-width($tablet) {
+			border-bottom: none;
+		}
+
+		@include max-width($mobile) {
+			letter-spacing: -0.1px;
+			padding-bottom: 42px;
+			border-bottom: 1px solid $color-line;
+		}
+	}
+}
+
+.graph-link {
+	text-align: left;
+	float: unset;
+	margin-right: 0;
+	margin-top: 15px;
+
+	@include max-width($tablet) {
+		padding-top: 16px;
+		border-top: 1px solid $color-line;
+		margin-left: 3px;
+	}
+
+	@include max-width($mobile) {
+		padding-top: 0;
+		margin: 0;
+		border-top: none;
+	}
+
+	.text-download {
+		letter-spacing: -0.6px;
+
+		@include max-width($tablet) {
+			letter-spacing: -0.2px;
+		}
+	}
+}
+
+.graph-down {
+	padding-top: 35px;
+
+	@include max-width($mobile) {
+		padding-top: 23px;
+	}
+}

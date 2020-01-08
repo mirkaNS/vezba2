@@ -1,0 +1,25 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "My new project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mirjana Glisic",
+  "license": "ISC",
+  "dependencies": {
+    "@glidejs/glide": "^3.3.0",
+    "browser-sync": "^2.26.7",
+    "flickity": "^2.2.1",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-lint": "^1.4.0"
+  },
+  "sasslintConfig": "sass-lint.yml",
+  "devDependencies": {
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-iconfont": "^10.0.3",
+    "gulp-iconfont-css": "^3.0.0"
+  }
+}

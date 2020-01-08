@@ -1,0 +1,147 @@
+.hero {
+	height: 891px;
+	background-color: $color-bg;
+	background-repeat: no-repeat;
+	position: relative;
+
+	@include max-width($tablet) {
+		background-size: cover;
+	}
+
+	@include max-width($mobile) {
+		height: 561px;
+	}
+}
+
+.hero-content {
+	margin: 209px 71px 16px 0;
+	float: right;
+
+	@include max-width($tablet) {
+		margin: 322px 31px 16px 0;
+	}
+
+	@include max-width($mobile) {
+		margin: 335px 31px 16px 0;
+	}
+
+	.hero-title {
+		font-size: 41px;
+		color: $color-grey;
+		font-family: 'Cordale';
+		font-weight: 100;
+		max-width: 500px;
+		display: inline-block;
+		letter-spacing: -0.4px;
+		line-height: 1.2;
+		margin-bottom: 3px;
+
+		@include max-width($tablet) {
+			max-width: 325px;
+			margin-bottom: 6px;
+			letter-spacing: -0.1px;
+			font-size: 29px;
+		}
+	}
+
+	.hero-text {
+		font-size: 16px;
+		font-family: 'John-Regular';
+		letter-spacing: 0.2px;
+		line-height: 1.3;
+
+		@include max-width($tablet) {
+			font-size: 14px;
+			letter-spacing: unset;
+		}
+	}
+}
+
+.download-link {
+	float: right;
+	clear: both;
+	margin-right: 332px;
+	padding-bottom: 70px;
+
+	@include max-width($tablet) {
+		margin-right: 116px;
+	}
+
+	@include max-width($mobile) {
+		margin-right: 41px;
+	}
+
+	.icon-download {
+		color: $color-aqua;
+		font-size: 12px;
+		margin-right: 5px;
+	}
+
+	.text-download {
+		font-size: 14px;
+		font-family: 'John-Bold';
+		color: $color-grey;
+		letter-spacing: -0.1px;
+
+		.text-regular {
+			font-family: 'John-Regular';
+		}
+	}
+}
+
+.explore-text {
+	font-size: 14px;
+	font-family: 'John-Bold';
+	color: $color-grey;
+	letter-spacing: -0.6px;
+	text-align: center;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	@include max-width($tablet) {
+		letter-spacing: -0.3px;
+	}
+
+	@include max-width($mobile) {
+		display: none;
+	}
+}
+
+.down {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	border: none;
+	background: transparent;
+
+	// @include max-width($mobile) {
+	// 	padding-top: 527px;
+	// }
+}
+
+.down-arrow {
+	display: block;
+	position: absolute;
+	bottom: 3px;
+	right: 49.7%;
+
+	@include max-width($tablet) {
+		right: 49.4%;
+	}
+
+	i {
+		border: solid $color-storm-dust;
+		border-width: 0 3px 3px 0;
+		display: inline-block;
+		padding: 3px;
+		margin-top: 35px;
+	}
+
+	.arrow {
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+	}
+}
